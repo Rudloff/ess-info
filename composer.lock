@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2884489feda54f0eafde0502bfd97b16",
-    "content-hash": "c224eda61ce4ee6866e9459ec467e452",
+    "hash": "f98a2662d7593837ae2ef783bc758cc3",
+    "content-hash": "606ab41947ff341ba8ee69d088a666b5",
     "packages": [
         {
             "name": "fabpot/goutte",
@@ -278,16 +278,16 @@
         },
         {
             "name": "rudloff/infogreffe-unofficial-api",
-            "version": "dev-develop",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/infogreffe-unofficial-api.git",
-                "reference": "0f322e382dc2a02fb4dd9dff146b29fcfb0fce8c"
+                "reference": "d096a35bba8d661ce18d22dab7c21acdb5c9f06f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/infogreffe-unofficial-api/zipball/0f322e382dc2a02fb4dd9dff146b29fcfb0fce8c",
-                "reference": "0f322e382dc2a02fb4dd9dff146b29fcfb0fce8c",
+                "url": "https://api.github.com/repos/Rudloff/infogreffe-unofficial-api/zipball/d096a35bba8d661ce18d22dab7c21acdb5c9f06f",
+                "reference": "d096a35bba8d661ce18d22dab7c21acdb5c9f06f",
                 "shasum": ""
             },
             "require": {
@@ -308,7 +308,7 @@
                 "LGPL-3.0"
             ],
             "description": "Unofficial API for infogreffe.fr",
-            "time": "2015-10-20 22:36:17"
+            "time": "2015-10-20 23:15:11"
         },
         {
             "name": "slim/slim",
@@ -746,9 +746,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "rudloff/infogreffe-unofficial-api": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
