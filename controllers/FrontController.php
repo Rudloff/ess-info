@@ -7,13 +7,13 @@ class FrontController {
 
     static function index() {
         global $app;
-        $app->render(__DIR__.'/../templates/index.tpl');
+        $app->render('index.tpl');
     }
 
     static function searchResults() {
         global $app;
         $results = Infogreffe::search($_POST['query']);
-        $app->render(__DIR__.'/../templates/searchResults.tpl', array('results'=>$results));
+        $app->render('searchResults.tpl', array('results'=>$results));
     }
 
     static function company($siret) {
@@ -30,7 +30,7 @@ class FrontController {
             $activity = $crawler->filter('[datapath="activite.codeNAF"] p:first-of-type a');
         }
         $app->render(
-            __DIR__.'/../templates/company.tpl',
+            'company.tpl',
             array(
                 'info'=>$results[0],
                 'category'=>trim($category->text()),
