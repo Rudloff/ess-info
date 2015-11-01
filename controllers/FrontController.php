@@ -2,6 +2,7 @@
 namespace ESSInfo\Controller;
 use InfogreffeUnofficial\Infogreffe;
 use Browser\Casper;
+use Symfony\Component\Yaml\Yaml;
 
 class FrontController {
 
@@ -22,6 +23,7 @@ class FrontController {
 
     static function company($siret) {
         global $app;
+        $types = Yaml::parse(__DIR__.'/../types.yml');
         $results = Infogreffe::search($siret);
         $client = new \Goutte\Client();
         $crawler = $client->request('GET', $results[0]->getURL());
@@ -37,6 +39,7 @@ class FrontController {
             'company.tpl',
             array(
                 'info'=>$results[0],
+                'types'=>$types,
                 'category'=>trim($category->text()),
                 'activity'=>trim($activity->text())
             )

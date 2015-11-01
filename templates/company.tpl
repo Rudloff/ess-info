@@ -21,5 +21,15 @@
             <th class="brdr--light-gray">Activité principale</th>
             <td class="brdr--light-gray">{$activity}</td>
         </tr>
+        <tr>
+            {if isset($types.$category.ess)}
+                <th class="brdr--light-gray">Économie sociale et solidaire</th>
+                {if $types.$category.ess}
+                    <td class="brdr--light-gray bg--green fnt--white">Oui</td>
+                {else}
+                    <td class="brdr--light-gray bg--red fnt--white">Non</td>
+                {/if}
+            {/if}
+        </tr>
     </table>
 </body>
