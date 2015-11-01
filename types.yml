@@ -36,3 +36,11 @@ Etablissement public local à caractère industriel ou commercial:
     public: true
 Société anonyme d'économie mixte à conseil d'administration:
     public: true
+Société coopérative de crédit:
+    ess: true
+Société coopérative ouvrière de production à forme anonyme et capital variable:
+    ess: true
+Société anonyme à directoire et conseil de surveillance:
+    ess: false
+Société anonyme à conseil d'administration:
+    ess: false
