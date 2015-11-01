@@ -44,3 +44,9 @@ Société anonyme à directoire et conseil de surveillance:
     ess: false
 Société anonyme à conseil d'administration:
     ess: false
+Ministère:
+    public: true
+Communauté urbaine:
+    public: true
+Métropole:
+    public: true
