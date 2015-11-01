@@ -12,8 +12,12 @@ class FrontController {
 
     static function searchResults() {
         global $app;
-        $results = Infogreffe::search($_POST['query']);
-        $app->render('searchResults.tpl', array('results'=>$results));
+        if (!empty($_POST['query'])) {
+            $results = Infogreffe::search($_POST['query']);
+            $app->render('searchResults.tpl', array('results'=>$results));
+        } else {
+            $app->redirect($app->urlFor('index'));
+        }
     }
 
     static function company($siret) {

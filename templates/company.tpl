@@ -1,5 +1,6 @@
 {include file='templates/inc/head.tpl'}
 <body class="p1">
+    {include file='templates/inc/header.tpl'}
     <h2>{$info->name}</h2>
     <strong>{$category}</strong>
     <table>

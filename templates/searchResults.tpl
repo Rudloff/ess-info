@@ -1,5 +1,6 @@
 {include file='templates/inc/head.tpl'}
 <body class="p1">
+    {include file='templates/inc/header.tpl'}
     <table>
         <tr>
             <th>Nom</th>
