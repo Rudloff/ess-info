@@ -50,3 +50,5 @@ Communauté urbaine:
     public: true
 Métropole:
     public: true
+Etablissement public à caractère industriel et commercial:
+    public: true
