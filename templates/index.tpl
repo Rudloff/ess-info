@@ -4,6 +4,6 @@
     <form method="post" action="{urlFor name='searchResults'}">
         <label for="query">Recherche</label>
         <input type="text" id="query" name="query" placeholder="Nom ou numéro SIRET" />
-        <input type="submit" />
+        <input type="submit" value="Rechercher" />
     </form>
 </body>
