@@ -30,3 +30,5 @@ Etablissement public national à caractère scientifique culturel et professionn
     public: true
 Etablissement d'hospitalisation:
     public: true
+Société anonyme:
+    ess: false
