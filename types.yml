@@ -2,3 +2,31 @@ Association déclarée:
     ess: true
 Association de droit local:
     ess: true
+Société par actions simplifiée:
+    ess: false
+Profession libérale:
+    ess: false
+Société coopérative de consommation à forme anonyme:
+    ess: true
+SA coopérative à conseil d'administration:
+    ess: true
+Société coopérative de banque populaire:
+    ess: true
+Mutuelle:
+    ess: true
+Fondation:
+    ess: true
+Société à responsabilité limitée:
+    ess: false
+Société coopérative d'intérêt collectif à forme anonyme à capital variable:
+    ess: true
+Société par actions simplifiée à associé unique:
+    ess: false
+Société à responsabilité limitée à associé unique:
+    ess: false
+Société d'exercice libéral à responsabilité limitée:
+    ess: false
+Etablissement public national à caractère scientifique culturel et professionnel:
+    public: true
+Etablissement d'hospitalisation:
+    public: true

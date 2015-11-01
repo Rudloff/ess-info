@@ -14,7 +14,10 @@
                 {foreach $info->address.lines as $line}
                     {$line}<br/>
                 {/foreach}
-                {$info->address.zipcode} {$info->address.city}
+                {if isset($info->address.zipcode)}
+                    {$info->address.zipcode}
+                {/if}
+                {$info->address.city}
             </td>
         </tr>
         <tr>
@@ -22,13 +25,17 @@
             <td class="brdr--light-gray">{$activity}</td>
         </tr>
         <tr>
+            <th class="brdr--light-gray">Catégorie</th>
             {if isset($types.$category.ess)}
-                <th class="brdr--light-gray">Économie sociale et solidaire</th>
                 {if $types.$category.ess}
-                    <td class="brdr--light-gray bg--green fnt--white">Oui</td>
+                    <td class="brdr--light-gray bg--green fnt--white">ESS</td>
                 {else}
-                    <td class="brdr--light-gray bg--red fnt--white">Non</td>
+                    <td class="brdr--light-gray bg--red fnt--white">Privé hors ESS</td>
                 {/if}
+            {elseif isset($types.$category.public) && $types.$category.public}
+                <td class="brdr--light-gray bg--blue fnt--white">Public</td>
+            {else}
+                <td class="brdr--light-gray">Autre</td>
             {/if}
         </tr>
     </table>
