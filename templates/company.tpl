@@ -39,4 +39,7 @@
             {/if}
         </tr>
     </table>
+    <p>
+        {$types.$category.description}
+    </p>
 </body>

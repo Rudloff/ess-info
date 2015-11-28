@@ -1,7 +1,7 @@
-Association déclarée:
+Association déclarée: &association
     ess: true
-Association de droit local:
-    ess: true
+    description: Une association à but non lucratif est un regroupement de personnes autour d'un projet commun.<br/>Les dirigeants d'une association ne sont pas rémunérés. Elle n'a pas de capital et donc pas d'actionnaires.
+Association de droit local: *association
 Société par actions simplifiée:
     ess: false
 Profession libérale:
