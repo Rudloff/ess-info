@@ -28,9 +28,9 @@
             <th class="brdr--light-gray">Catégorie</th>
             {if isset($types.$category.ess)}
                 {if $types.$category.ess}
-                    <td class="brdr--light-gray bg--green fnt--white">ESS</td>
+                    <td class="brdr--light-gray bg--green fnt--white"><abbr title="Économie sociale et solidaire">ESS</abbr></td>
                 {else}
-                    <td class="brdr--light-gray bg--red fnt--white">Privé hors ESS</td>
+                    <td class="brdr--light-gray bg--red fnt--white">Privé hors <abbr title="Économie sociale et solidaire">ESS</abbr></td>
                 {/if}
             {elseif isset($types.$category.public) && $types.$category.public}
                 <td class="brdr--light-gray bg--blue fnt--white">Public</td>
