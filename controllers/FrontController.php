@@ -23,7 +23,7 @@ class FrontController {
 
     static function company($siret) {
         global $app;
-        $types = Yaml::parse(__DIR__.'/../types.yml');
+        $types = Yaml::parse(file_get_contents(__DIR__.'/../types.yml'));
         $results = Infogreffe::search($siret);
         $client = new \Goutte\Client();
         $crawler = $client->request('GET', $results[0]->getURL());
