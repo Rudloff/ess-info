@@ -1,0 +1,54 @@
+Association déclarée: &association
+    ess: true
+    description: Une association à but non lucratif est un regroupement de personnes autour d'un projet commun.<br/>Les dirigeants d'une association ne sont pas rémunérés. Elle n'a pas de capital et donc pas d'actionnaires.
+Association de droit local: *association
+Société par actions simplifiée:
+    ess: false
+Profession libérale:
+    ess: false
+Société coopérative de consommation à forme anonyme:
+    ess: true
+SA coopérative à conseil d'administration:
+    ess: true
+Société coopérative de banque populaire:
+    ess: true
+Mutuelle:
+    ess: true
+Fondation:
+    ess: true
+Société à responsabilité limitée:
+    ess: false
+Société coopérative d'intérêt collectif à forme anonyme à capital variable:
+    ess: true
+Société par actions simplifiée à associé unique:
+    ess: false
+Société à responsabilité limitée à associé unique:
+    ess: false
+Société d'exercice libéral à responsabilité limitée:
+    ess: false
+Etablissement public national à caractère scientifique culturel et professionnel:
+    public: true
+Etablissement d'hospitalisation:
+    public: true
+Société anonyme:
+    ess: false
+Etablissement public local à caractère industriel ou commercial:
+    public: true
+Société anonyme d'économie mixte à conseil d'administration:
+    public: true
+Société coopérative de crédit:
+    ess: true
+Société coopérative ouvrière de production à forme anonyme et capital variable:
+    ess: true
+Société anonyme à directoire et conseil de surveillance:
+    ess: false
+Société anonyme à conseil d'administration:
+    ess: false
+Ministère:
+    public: true
+Communauté urbaine:
+    public: true
+Métropole:
+    public: true
+Etablissement public à caractère industriel et commercial:
+    public: true

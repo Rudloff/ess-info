@@ -7,7 +7,8 @@ $app = new \Slim\Slim(array(
 ));
 $view = $app->view();
 $view->parserExtensions = array(
-    dirname(__FILE__).'/vendor/slim/views/SmartyPlugins',
+    __DIR__.'/vendor/slim/views/SmartyPlugins',
+    __DIR__.'/vendor/rudloff/smarty-plugin-noscheme/'
 );
 $app->get('/', array('ESSInfo\Controller\FrontController', 'index'))->name('index');
 $app->get('/search/', function () use ($app) {

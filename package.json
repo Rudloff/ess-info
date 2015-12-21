@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "bower": "~1.6.3"
+        "bower": "~1.7.1"
     },
     "scripts": {
         "postinstall": "./node_modules/bower/bin/bower install"
@@ -8,5 +8,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Rudloff/ess-info.git"
-    }
+    },
+    "license": "GPL-3.0"
 }

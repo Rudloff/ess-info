@@ -2,22 +2,28 @@
 namespace ESSInfo\Controller;
 use InfogreffeUnofficial\Infogreffe;
 use Browser\Casper;
+use Symfony\Component\Yaml\Yaml;
 
 class FrontController {
 
     static function index() {
         global $app;
-        $app->render(__DIR__.'/../templates/index.tpl');
+        $app->render('index.tpl');
     }
 
     static function searchResults() {
         global $app;
-        $results = Infogreffe::search($_POST['query']);
-        $app->render(__DIR__.'/../templates/searchResults.tpl', array('results'=>$results));
+        if (!empty($_POST['query'])) {
+            $results = Infogreffe::search($_POST['query']);
+            $app->render('searchResults.tpl', array('results'=>$results));
+        } else {
+            $app->redirect($app->urlFor('index'));
+        }
     }
 
     static function company($siret) {
         global $app;
+        $types = Yaml::parse(file_get_contents(__DIR__.'/../types.yml'));
         $results = Infogreffe::search($siret);
         $client = new \Goutte\Client();
         $crawler = $client->request('GET', $results[0]->getURL());
@@ -30,9 +36,10 @@ class FrontController {
             $activity = $crawler->filter('[datapath="activite.codeNAF"] p:first-of-type a');
         }
         $app->render(
-            __DIR__.'/../templates/company.tpl',
+            'company.tpl',
             array(
                 'info'=>$results[0],
+                'types'=>$types,
                 'category'=>trim($category->text()),
                 'activity'=>trim($activity->text())
             )
