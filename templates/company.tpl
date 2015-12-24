@@ -40,6 +40,8 @@
         </tr>
     </table>
     <p>
-        {$types.$category.description}
+        {if isset($types.$category.description)}
+            {$types.$category.description}
+        {/if}
     </p>
 </body>
