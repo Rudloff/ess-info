@@ -26,14 +26,14 @@ Société à responsabilité limitée à associé unique:
     ess: false
 Société d'exercice libéral à responsabilité limitée:
     ess: false
-Etablissement public national à caractère scientifique culturel et professionnel:
+Etablissement public national à caractère scientifique culturel et professionnel: &ep
     public: true
+    description: Un établissement public est un organisme financé par ds fonds publics qui remplit une mission d'intérêt général.<br/>Ils sont rattachés à une administration de l'État ou une collectivité.
 Etablissement d'hospitalisation:
     public: true
 Société anonyme:
     ess: false
-Etablissement public local à caractère industriel ou commercial:
-    public: true
+Etablissement public local à caractère industriel ou commercial: *ep
 Société anonyme d'économie mixte à conseil d'administration:
     public: true
 Société coopérative de crédit:
@@ -50,5 +50,4 @@ Communauté urbaine:
     public: true
 Métropole:
     public: true
-Etablissement public à caractère industriel et commercial:
-    public: true
+Etablissement public à caractère industriel et commercial: *ep
