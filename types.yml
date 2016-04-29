@@ -51,3 +51,5 @@ Communauté urbaine:
 Métropole:
     public: true
 Etablissement public à caractère industriel et commercial: *ep
+Société civile de moyens:
+    ess: false
