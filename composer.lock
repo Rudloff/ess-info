@@ -120,16 +120,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/bb9024c526b22f3fe6ae55a561fd70653d470aa8",
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8",
                 "shasum": ""
             },
             "require": {
@@ -167,20 +167,20 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-10-15 22:28:00"
+            "time": "2016-03-08 01:15:46"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982"
+                "reference": "31382fef2889136415751badebbd1cb022a4ed72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4d0bdbe1206df7440219ce14c972aa57cc5e4982",
-                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/31382fef2889136415751badebbd1cb022a4ed72",
+                "reference": "31382fef2889136415751badebbd1cb022a4ed72",
                 "shasum": ""
             },
             "require": {
@@ -225,7 +225,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-11-03 01:34:55"
+            "time": "2016-04-13 19:56:01"
         },
         {
             "name": "jeremykendall/php-domain-parser",
@@ -291,16 +291,16 @@
         },
         {
             "name": "league/uri",
-            "version": "4.0.1",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri.git",
-                "reference": "671150fbd1d4120746195d6bec1aa78b95b14104"
+                "reference": "0cbce9fe7d9808690ebda67b110ad96bcae9daee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/671150fbd1d4120746195d6bec1aa78b95b14104",
-                "reference": "671150fbd1d4120746195d6bec1aa78b95b14104",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/0cbce9fe7d9808690ebda67b110ad96bcae9daee",
+                "reference": "0cbce9fe7d9808690ebda67b110ad96bcae9daee",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -334,8 +334,7 @@
                 {
                     "name": "Ignace Nyamagana Butera",
                     "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/",
-                    "role": "Developer"
+                    "homepage": "https://nyamsprod.com"
                 }
             ],
             "description": "URI manipulation library",
@@ -352,7 +351,7 @@
                 "url",
                 "ws"
             ],
-            "time": "2015-11-03 07:54:30"
+            "time": "2016-03-24 08:38:29"
         },
         {
             "name": "psr/http-message",
@@ -439,25 +438,30 @@
         },
         {
             "name": "rudloff/smarty-plugin-noscheme",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/smarty-plugin-noscheme.git",
-                "reference": "537bcb2f7576252af70d8f9f817bfe050d873072"
+                "reference": "7b64350bd255690e44db497e50bb5edc5e87d5e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/smarty-plugin-noscheme/zipball/537bcb2f7576252af70d8f9f817bfe050d873072",
-                "reference": "537bcb2f7576252af70d8f9f817bfe050d873072",
+                "url": "https://api.github.com/repos/Rudloff/smarty-plugin-noscheme/zipball/7b64350bd255690e44db497e50bb5edc5e87d5e6",
+                "reference": "7b64350bd255690e44db497e50bb5edc5e87d5e6",
                 "shasum": ""
             },
             "require": {
-                "league/uri": "~4.0"
+                "league/uri": "~4.1.1"
             },
             "require-dev": {
-                "symfony/var-dumper": "~2.7.6"
+                "symfony/var-dumper": "~3.0.1"
             },
             "type": "library",
+            "autoload": {
+                "files": [
+                    "modifier.noscheme.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0"
@@ -471,7 +475,7 @@
                 }
             ],
             "description": "Smarty modifier that removes the scheme in URLs",
-            "time": "2015-10-31 10:25:47"
+            "time": "2016-04-09 00:40:13"
         },
         {
             "name": "slim/slim",
@@ -629,16 +633,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.0.1",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "334a58c0def6dfcbe4bb57c6d2a8c06c6cc77679"
+                "reference": "e07127ac31230b30887c2dddf3708d883d239b14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/334a58c0def6dfcbe4bb57c6d2a8c06c6cc77679",
-                "reference": "334a58c0def6dfcbe4bb57c6d2a8c06c6cc77679",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/e07127ac31230b30887c2dddf3708d883d239b14",
+                "reference": "e07127ac31230b30887c2dddf3708d883d239b14",
                 "shasum": ""
             },
             "require": {
@@ -682,20 +686,20 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-26 13:39:53"
+            "time": "2016-03-04 07:55:57"
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.8",
+            "version": "v2.7.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "4e35a78f932a4c07bd349efea647ac741c1419b6"
+                "reference": "dfb9d26a4dd62fc9389c42196cf4a087400948b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/4e35a78f932a4c07bd349efea647ac741c1419b6",
-                "reference": "4e35a78f932a4c07bd349efea647ac741c1419b6",
+                "url": "https://api.github.com/repos/symfony/console/zipball/dfb9d26a4dd62fc9389c42196cf4a087400948b8",
+                "reference": "dfb9d26a4dd62fc9389c42196cf4a087400948b8",
                 "shasum": ""
             },
             "require": {
@@ -741,20 +745,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-23 11:17:38"
+            "time": "2016-04-20 06:32:07"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v3.0.1",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "4613311fd46e146f506403ce2f8a0c71d402d2a3"
+                "reference": "65e764f404685f2dc20c057e889b3ad04b2e2db0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/4613311fd46e146f506403ce2f8a0c71d402d2a3",
-                "reference": "4613311fd46e146f506403ce2f8a0c71d402d2a3",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/65e764f404685f2dc20c057e889b3ad04b2e2db0",
+                "reference": "65e764f404685f2dc20c057e889b3ad04b2e2db0",
                 "shasum": ""
             },
             "require": {
@@ -794,20 +798,20 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-05 17:45:07"
+            "time": "2016-03-04 07:55:57"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.0.1",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "7c622b0c9fb8bdb146d6dfa86c5f91dcbfdbc11d"
+                "reference": "18a06d7a9af41718c20764a674a0ebba3bc40d1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/7c622b0c9fb8bdb146d6dfa86c5f91dcbfdbc11d",
-                "reference": "7c622b0c9fb8bdb146d6dfa86c5f91dcbfdbc11d",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/18a06d7a9af41718c20764a674a0ebba3bc40d1f",
+                "reference": "18a06d7a9af41718c20764a674a0ebba3bc40d1f",
                 "shasum": ""
             },
             "require": {
@@ -850,20 +854,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-26 13:42:31"
+            "time": "2016-03-23 13:23:25"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.0.1",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25"
+                "reference": "1289d16209491b584839022f29257ad859b8532d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/49ff736bd5d41f45240cec77b44967d76e0c3d25",
-                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
                 "shasum": ""
             },
             "require": {
@@ -875,7 +879,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -909,20 +913,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2015-11-20 09:19:13"
+            "time": "2016-01-20 09:13:37"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.1",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691"
+                "reference": "0047c8366744a16de7516622c5b7355336afae96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/3df409958a646dad2bc5046c3fb671ee24a1a691",
-                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0047c8366744a16de7516622c5b7355336afae96",
+                "reference": "0047c8366744a16de7516622c5b7355336afae96",
                 "shasum": ""
             },
             "require": {
@@ -958,22 +962,22 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-26 13:39:53"
+            "time": "2016-03-04 07:55:57"
         }
     ],
     "packages-dev": [
         {
             "name": "symfony/var-dumper",
-            "version": "v3.0.1",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "87db8700deb12ba2b65e858f656a1f885530bcb0"
+                "reference": "3841ed86527d18ee2c35fe4afb1b2fc60f8fae79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/87db8700deb12ba2b65e858f656a1f885530bcb0",
-                "reference": "87db8700deb12ba2b65e858f656a1f885530bcb0",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3841ed86527d18ee2c35fe4afb1b2fc60f8fae79",
+                "reference": "3841ed86527d18ee2c35fe4afb1b2fc60f8fae79",
                 "shasum": ""
             },
             "require": {
@@ -1023,7 +1027,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-12-05 11:13:14"
+            "time": "2016-03-10 10:34:12"
         }
     ],
     "aliases": [],
