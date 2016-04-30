@@ -1,17 +1,21 @@
 <?php
 namespace ESSInfo\Controller;
+
 use InfogreffeUnofficial\Infogreffe;
 use Browser\Casper;
 use Symfony\Component\Yaml\Yaml;
 
-class FrontController {
+class FrontController
+{
 
-    static function index($request, $response) {
+    public static function index($request, $response)
+    {
         global $container;
         $container->view->render($response, 'index.tpl');
     }
 
-    static function searchResults($request, $response) {
+    public static function searchResults($request, $response)
+    {
         global $container;
         if (!empty($_POST['query'])) {
             $results = Infogreffe::search($_POST['query']);
@@ -21,7 +25,8 @@ class FrontController {
         }
     }
 
-    static function company($request, $response, $params) {
+    public static function company($request, $response, $params)
+    {
         global $container;
         $types = Yaml::parse(file_get_contents(__DIR__.'/../types.yml'));
         $results = Infogreffe::search($params['siret']);
@@ -29,7 +34,9 @@ class FrontController {
         $crawler = $client->request('GET', $results[0]->getURL());
         $category = $crawler->filter('.first .identTitreValeur p:nth-of-type(5) .data');
         if ($category->count() == 0) {
-            $category = $crawler->filter('[datapath="entreprise.personneMorale.identification.formeJuridique.libelle"] p');
+            $category = $crawler->filter(
+                '[datapath="entreprise.personneMorale.identification.formeJuridique.libelle"] p'
+            );
         }
         $activity = $crawler->filter('.first .identTitreValeur p:nth-of-type(6) .data');
         if ($activity->count() == 0) {
