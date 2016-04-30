@@ -2,7 +2,6 @@
 namespace ESSInfo\Controller;
 
 use InfogreffeUnofficial\Infogreffe;
-use Browser\Casper;
 use Symfony\Component\Yaml\Yaml;
 
 class FrontController
