@@ -1,7 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
 
-
 $app = new \Slim\App();
 $container = $app->getContainer();
 $container['view'] = function ($c) {

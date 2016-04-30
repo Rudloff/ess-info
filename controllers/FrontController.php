@@ -30,6 +30,9 @@ class FrontController
         $types = Yaml::parse(file_get_contents(__DIR__.'/../types.yml'));
         $results = Infogreffe::search($params['siret']);
         $client = new \Goutte\Client();
+        if (empty($results)) {
+            throw(new \Exception('Numéro SIRET introuvable'));
+        }
         $crawler = $client->request('GET', $results[0]->getURL());
         $category = $crawler->filter('.first .identTitreValeur p:nth-of-type(5) .data');
         if ($category->count() == 0) {
