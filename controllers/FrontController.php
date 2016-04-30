@@ -6,25 +6,25 @@ use Symfony\Component\Yaml\Yaml;
 
 class FrontController {
 
-    static function index() {
-        global $app;
-        $app->render('index.tpl');
+    static function index($request, $response) {
+        global $container;
+        $container->view->render($response, 'index.tpl');
     }
 
-    static function searchResults() {
-        global $app;
+    static function searchResults($request, $response) {
+        global $container;
         if (!empty($_POST['query'])) {
             $results = Infogreffe::search($_POST['query']);
-            $app->render('searchResults.tpl', array('results'=>$results));
+            $container->view->render($response, 'searchResults.tpl', array('results'=>$results));
         } else {
             $app->redirect($app->urlFor('index'));
         }
     }
 
-    static function company($siret) {
-        global $app;
+    static function company($request, $response, $params) {
+        global $container;
         $types = Yaml::parse(file_get_contents(__DIR__.'/../types.yml'));
-        $results = Infogreffe::search($siret);
+        $results = Infogreffe::search($params['siret']);
         $client = new \Goutte\Client();
         $crawler = $client->request('GET', $results[0]->getURL());
         $category = $crawler->filter('.first .identTitreValeur p:nth-of-type(5) .data');
@@ -35,7 +35,8 @@ class FrontController {
         if ($activity->count() == 0) {
             $activity = $crawler->filter('[datapath="activite.codeNAF"] p:first-of-type a');
         }
-        $app->render(
+        $container->view->render(
+            $response,
             'company.tpl',
             array(
                 'info'=>$results[0],

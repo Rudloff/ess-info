@@ -10,7 +10,7 @@
         </tr>
         {foreach $results as $result}
             <tr class="brdr--light-gray">
-                <td><a href="{urlFor name='company' options="siret.{$result->siret}"}">{$result->name}</a></td>
+                <td><a href="{path_for name='company' data=['siret'=>$result->siret]}">{$result->name}</a></td>
                 <td>{$result->siret}</td>
                 {if isset($result->address.zipcode)}
                     <td class="txt--right">{$result->address.zipcode|substr:0:2}</td>
