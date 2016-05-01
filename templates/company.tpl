@@ -1,5 +1,5 @@
 {include file='templates/inc/head.tpl'}
-<body class="p1 bg--white">
+<body class="p1 bg--white measure">
     {include file='templates/inc/header.tpl'}
     <h2>{$info->name}</h2>
     <strong>{$category}</strong>{if $info->removed} (radié){/if}
@@ -50,3 +50,4 @@
         {/if}
     </p>
 </body>
+</html>

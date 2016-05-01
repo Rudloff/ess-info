@@ -19,7 +19,14 @@ class FrontController
         $query = $request->getParam('query');
         if (!empty($query)) {
             $results = Infogreffe::search($query);
-            $container->view->render($response, 'searchResults.tpl', array('results'=>$results));
+            $container->view->render(
+                $response,
+                'searchResults.tpl',
+                array(
+                    'results'=>$results,
+                    'query'=>$query
+                )
+            );
         } else {
             return self::toHome($request, $response);
         }
