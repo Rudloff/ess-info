@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "125194028fa15e8dd504e93542dd1d51",
-    "content-hash": "23eb5e9419d9a1bc4602b1cc32faea42",
+    "hash": "1d82a995dc7ad9982bda9bcf75820ed6",
+    "content-hash": "71c8a1af2b758bd06747724697c1c9c6",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -253,61 +253,6 @@
                 "uri"
             ],
             "time": "2016-04-13 19:56:01"
-        },
-        {
-            "name": "infogreffe/entreprises-immatriculees-en-2012",
-            "version": "dev-release",
-            "dist": {
-                "type": "file",
-                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2012/download/?format=json&timezone=Europe/Berlin",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
-            "name": "infogreffe/entreprises-immatriculees-en-2013",
-            "version": "dev-release",
-            "dist": {
-                "type": "file",
-                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2013/download/?format=json&timezone=Europe/Berlin",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
-            "name": "infogreffe/entreprises-immatriculees-en-2014",
-            "version": "dev-release",
-            "dist": {
-                "type": "file",
-                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2014/download/?format=json&timezone=Europe/Berlin",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
-            "name": "infogreffe/entreprises-immatriculees-en-2015",
-            "version": "dev-release",
-            "dist": {
-                "type": "file",
-                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2015/download/?format=json&timezone=Europe/Berlin",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
-            "name": "infogreffe/entreprises-immatriculees-en-2016",
-            "version": "dev-release",
-            "dist": {
-                "type": "file",
-                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-en-2016/download/?format=json&timezone=Europe/Berlin",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
         },
         {
             "name": "jeremykendall/php-domain-parser",
@@ -1156,6 +1101,61 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2012",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2012/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2013",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2013/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2014",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2014/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2015",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2015/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2016",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-en-2016/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
         {
             "name": "league/climate",
             "version": "3.2.1",
