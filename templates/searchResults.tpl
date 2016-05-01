@@ -3,7 +3,7 @@
     {include file='templates/inc/header.tpl'}
     <div class="grd py1">
         <form class="grd-row" method="GET" action="{path_for name='searchResults'}">
-            <input class="grd-row-col-5-6" title="Recherche" itemprop="query-input" type="text" id="query" name="query" placeholder="Nom ou numéro SIRET" value={$query} />
+            <input class="grd-row-col-5-6" title="Recherche" itemprop="query-input" type="text" id="query" name="query" placeholder="Nom ou numéro SIRET" value="{$query}" />
             <input class="grd-row-col-1-6" type="submit" value="Rechercher" style="margin-top:0;" />
         </form>
     </div>
