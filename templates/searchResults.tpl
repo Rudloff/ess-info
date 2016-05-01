@@ -15,9 +15,13 @@
                 <td>{$result->siret}</td>
                 {if isset($result->address.zipcode)}
                     <td class="txt--right">{$result->address.zipcode|substr:0:2}</td>
+                {else}
+                    <td></td>
                 {/if}
                 {if isset($result->address.city)}
                     <td>{$result->address.city}</td>
+                {else}
+                    <td></td>
                 {/if}
                 {if $result->removed}
                     <td class="fnt--red">❌</td>
