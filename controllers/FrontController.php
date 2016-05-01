@@ -16,8 +16,9 @@ class FrontController
     public static function searchResults($request, $response)
     {
         global $container;
-        if (!empty($_POST['query'])) {
-            $results = Infogreffe::search($_POST['query']);
+        $query = $request->getParam('query');
+        if (!empty($query)) {
+            $results = Infogreffe::search($query);
             $container->view->render($response, 'searchResults.tpl', array('results'=>$results));
         } else {
             return self::toHome($request, $response);
