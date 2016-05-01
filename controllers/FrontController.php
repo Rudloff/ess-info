@@ -10,7 +10,13 @@ class FrontController
     public static function index($request, $response)
     {
         global $container;
-        $container->view->render($response, 'index.tpl');
+        $container->view->render(
+            $response,
+            'index.tpl',
+            array(
+                'description'=>"Ce site vous permet de recherche un organisme et d'obtenir des informations concernant sa forme juridique."
+            )
+        );
     }
 
     public static function searchResults($request, $response)
@@ -24,7 +30,9 @@ class FrontController
                 'searchResults.tpl',
                 array(
                     'results'=>$results,
-                    'query'=>$query
+                    'query'=>$query,
+                    'title'=>'Résultats de la recherche «&nbsp;'.$query.'&nbsp;»',
+                    'description'=>'Résultats de la recherche «&nbsp;'.$query.'&nbsp;» sur ESS info'
                 )
             );
         } else {
@@ -68,6 +76,10 @@ class FrontController
         if ($activityName == 'null') {
             $activityName = 'Inconnue';
         }
+        $description = 'Informations sur '.$results[0]->name;
+        if ($categoryName != 'Forme juridique inconnue') {
+            $description .= ', '.$categoryName;
+        }
         $container->view->render(
             $response,
             'company.tpl',
@@ -76,7 +88,9 @@ class FrontController
                 'types'=>$types,
                 'category'=>$categoryName,
                 'activity'=>$activityName,
-                'url'=>$results[0]->getURL()
+                'url'=>$results[0]->getURL(),
+                'title'=>$results[0]->name,
+                'description'=>$description
             )
         );
     }
