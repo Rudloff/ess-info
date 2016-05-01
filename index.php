@@ -12,9 +12,7 @@ $container['view'] = function ($c) {
     return $view;
 };
 $app->get('/', array('ESSInfo\Controller\FrontController', 'index'))->setName('index');
-$app->get('/search/', function () use ($app) {
-    $app->redirect($app->urlFor('index'));
-});
+$app->get('/search/', array('ESSInfo\Controller\FrontController', 'toHome'));
 $app->post('/search/', array('ESSInfo\Controller\FrontController', 'searchResults'))->setName('searchResults');
 $app->get('/company/{siret}', array('ESSInfo\Controller\FrontController', 'company'))->setName('company');
 $app->run();

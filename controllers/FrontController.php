@@ -20,7 +20,7 @@ class FrontController
             $results = Infogreffe::search($_POST['query']);
             $container->view->render($response, 'searchResults.tpl', array('results'=>$results));
         } else {
-            $app->redirect($app->urlFor('index'));
+            return self::toHome($request, $response);
         }
     }
 
@@ -54,5 +54,11 @@ class FrontController
                 'activity'=>trim($activity->text())
             )
         );
+    }
+
+    public static function toHome($request, $response)
+    {
+        global $container;
+        return $response->withHeader('Location', $container->router->pathFor('index'));
     }
 }
