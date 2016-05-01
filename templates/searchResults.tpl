@@ -7,6 +7,7 @@
             <th>SIRET</th>
             <th>Département</th>
             <th>Ville</th>
+            <th>Actif</th>
         </tr>
         {foreach $results as $result}
             <tr class="brdr--light-gray">
@@ -17,6 +18,11 @@
                 {/if}
                 {if isset($result->address.city)}
                     <td>{$result->address.city}</td>
+                {/if}
+                {if $result->removed}
+                    <td class="fnt--red">❌</td>
+                {else}
+                    <td class="fnt--green">✔</td>
                 {/if}
             </tr>
         {/foreach}
