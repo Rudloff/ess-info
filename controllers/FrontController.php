@@ -44,14 +44,30 @@ class FrontController
         if ($activity->count() == 0) {
             $activity = $crawler->filter('[datapath="activite.codeNAF"] p:first-of-type a');
         }
+        if (count($category) > 0) {
+            $categoryName = trim($category->text());
+        } else {
+            $categoryName = 'Forme juridique inconnue';
+        }
+        if ($categoryName == 'null') {
+            $categoryName = 'Forme juridique inconnue';
+        }
+        if (count($activity) > 0) {
+            $activityName = trim($activity->text());
+        } else {
+            $activityName = 'Inconnue';
+        }
+        if ($activityName == 'null') {
+            $activityName = 'Inconnue';
+        }
         $container->view->render(
             $response,
             'company.tpl',
             array(
                 'info'=>$results[0],
                 'types'=>$types,
-                'category'=>trim($category->text()),
-                'activity'=>trim($activity->text())
+                'category'=>$categoryName,
+                'activity'=>$activityName
             )
         );
     }
