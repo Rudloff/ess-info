@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b927a603fc7a686a2fe8d2e7a95f63ac",
-    "content-hash": "1fea3f379ed3cda670ab9ff4a04a535c",
+    "hash": "125194028fa15e8dd504e93542dd1d51",
+    "content-hash": "23eb5e9419d9a1bc4602b1cc32faea42",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -85,16 +85,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.1.1",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+                "reference": "d094e337976dff9d8e2424e8485872194e768662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d094e337976dff9d8e2424e8485872194e768662",
+                "reference": "d094e337976dff9d8e2424e8485872194e768662",
                 "shasum": ""
             },
             "require": {
@@ -110,7 +110,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -143,7 +143,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-11-23 00:47:50"
+            "time": "2016-03-21 20:02:09"
         },
         {
             "name": "guzzlehttp/promises",
@@ -253,6 +253,61 @@
                 "uri"
             ],
             "time": "2016-04-13 19:56:01"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2012",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2012/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2013",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2013/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2014",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2014/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2015",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2015/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "infogreffe/entreprises-immatriculees-en-2016",
+            "version": "dev-release",
+            "dist": {
+                "type": "file",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-en-2016/download/?format=json&timezone=Europe/Berlin",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
         },
         {
             "name": "jeremykendall/php-domain-parser",
@@ -570,24 +625,24 @@
         },
         {
             "name": "rudloff/infogreffe-unofficial-api",
-            "version": "0.2.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/infogreffe-unofficial-api.git",
-                "reference": "d096a35bba8d661ce18d22dab7c21acdb5c9f06f"
+                "reference": "93028e687f94aad5ca6d75567272e5026c7f5391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/infogreffe-unofficial-api/zipball/d096a35bba8d661ce18d22dab7c21acdb5c9f06f",
-                "reference": "d096a35bba8d661ce18d22dab7c21acdb5c9f06f",
+                "url": "https://api.github.com/repos/Rudloff/infogreffe-unofficial-api/zipball/93028e687f94aad5ca6d75567272e5026c7f5391",
+                "reference": "93028e687f94aad5ca6d75567272e5026c7f5391",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "~6.1.0",
-                "symfony/console": "~2.7.5"
+                "guzzlehttp/guzzle": "~6.2.0",
+                "symfony/console": "~3.0.0"
             },
             "require-dev": {
-                "symfony/var-dumper": "~2.7.5"
+                "symfony/var-dumper": "~3.0.0"
             },
             "type": "library",
             "autoload": {
@@ -600,7 +655,7 @@
                 "LGPL-3.0"
             ],
             "description": "Unofficial API for infogreffe.fr",
-            "time": "2015-10-20 23:15:11"
+            "time": "2016-05-01 00:37:31"
         },
         {
             "name": "rudloff/smarty-plugin-noscheme",
@@ -824,25 +879,26 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.12",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "dfb9d26a4dd62fc9389c42196cf4a087400948b8"
+                "reference": "6b1175135bc2a74c08a28d89761272de8beed8cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/dfb9d26a4dd62fc9389c42196cf4a087400948b8",
-                "reference": "dfb9d26a4dd62fc9389c42196cf4a087400948b8",
+                "url": "https://api.github.com/repos/symfony/console/zipball/6b1175135bc2a74c08a28d89761272de8beed8cd",
+                "reference": "6b1175135bc2a74c08a28d89761272de8beed8cd",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1",
-                "symfony/process": "~2.1"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -852,7 +908,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -879,7 +935,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-20 06:32:07"
+            "time": "2016-03-16 17:00:50"
         },
         {
             "name": "symfony/css-selector",
@@ -1101,6 +1157,105 @@
     ],
     "packages-dev": [
         {
+            "name": "league/climate",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/climate.git",
+                "reference": "b103fc8faa3780c802cc507d5f0ff534ecc94fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/climate/zipball/b103fc8faa3780c802cc507d5f0ff534ecc94fb5",
+                "reference": "b103fc8faa3780c802cc507d5f0ff534ecc94fb5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "seld/cli-prompt": "~1.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.4",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\CLImate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Tannenbaum",
+                    "email": "hey@joe.codes",
+                    "homepage": "http://joe.codes/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP's best friend for the terminal. CLImate allows you to easily output colored text, special formats, and more.",
+            "keywords": [
+                "cli",
+                "colors",
+                "command",
+                "php",
+                "terminal"
+            ],
+            "time": "2016-04-04 20:24:59"
+        },
+        {
+            "name": "seld/cli-prompt",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/cli-prompt.git",
+                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Seld\\CliPrompt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Allows you to prompt for user input on the command line, and optionally hide the characters they type",
+            "keywords": [
+                "cli",
+                "console",
+                "hidden",
+                "input",
+                "prompt"
+            ],
+            "time": "2016-04-18 09:31:41"
+        },
+        {
             "name": "symfony/var-dumper",
             "version": "v3.0.4",
             "source": {
@@ -1166,7 +1321,14 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rudloff/infogreffe-unofficial-api": 20,
+        "infogreffe/entreprises-immatriculees-en-2016": 20,
+        "infogreffe/entreprises-immatriculees-en-2015": 20,
+        "infogreffe/entreprises-immatriculees-en-2014": 20,
+        "infogreffe/entreprises-immatriculees-en-2013": 20,
+        "infogreffe/entreprises-immatriculees-en-2012": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

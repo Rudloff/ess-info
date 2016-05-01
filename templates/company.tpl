@@ -2,7 +2,7 @@
 <body class="p1 bg--white">
     {include file='templates/inc/header.tpl'}
     <h2>{$info->name}</h2>
-    <strong>{$category}</strong>
+    <strong>{$category}</strong>{if $info->removed} (radiée){/if}
     <table>
         <tr>
             <th class="brdr--light-gray">SIRET</th>
