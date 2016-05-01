@@ -574,12 +574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/infogreffe-unofficial-api.git",
-                "reference": "93028e687f94aad5ca6d75567272e5026c7f5391"
+                "reference": "82de3fc391d0f6d783a3077a8216c905bf95dfa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/infogreffe-unofficial-api/zipball/93028e687f94aad5ca6d75567272e5026c7f5391",
-                "reference": "93028e687f94aad5ca6d75567272e5026c7f5391",
+                "url": "https://api.github.com/repos/Rudloff/infogreffe-unofficial-api/zipball/82de3fc391d0f6d783a3077a8216c905bf95dfa5",
+                "reference": "82de3fc391d0f6d783a3077a8216c905bf95dfa5",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +600,7 @@
                 "LGPL-3.0"
             ],
             "description": "Unofficial API for infogreffe.fr",
-            "time": "2016-05-01 00:37:31"
+            "time": "2016-05-01 16:08:12"
         },
         {
             "name": "rudloff/smarty-plugin-noscheme",
