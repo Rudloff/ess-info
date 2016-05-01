@@ -38,6 +38,11 @@
                 <td class="brdr--light-gray">Autre</td>
             {/if}
         </tr>
+        <tr>
+            <td colspan="2" class="brdr--light-gray">
+                <a target="_blank" href="{$url}">Fiche Infogreffe</a>
+            </td>
+        </tr>
     </table>
     <p>
         {if isset($types.$category.description)}

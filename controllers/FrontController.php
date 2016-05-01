@@ -67,7 +67,8 @@ class FrontController
                 'info'=>$results[0],
                 'types'=>$types,
                 'category'=>$categoryName,
-                'activity'=>$activityName
+                'activity'=>$activityName,
+                'url'=>$results[0]->getURL()
             )
         );
     }
