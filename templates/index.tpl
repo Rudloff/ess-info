@@ -12,7 +12,7 @@
         Les coopératives, mutuelles, fondations et associations sont des organisations basées sur des principes de solidarités et d'utilité sociale. Elles forment ce qu'on appelle l'économie sociale et solidaire (ESS), un mouvement qui recherche des modes de fonctionnements collectifs plus démocratiques, avec une lucrativité limitée.
     </p>
     <p>
-        Ce site vous permet de recherche un organisme et d'obtenir des informations concernant sa forme juridique.
+        Ce site vous permet de rechercher un organisme et d'obtenir des informations concernant sa forme juridique et son appartenance ou non à l'ESS.
     </p>
 </body>
 </html>
