@@ -1,0 +1,5 @@
+Sitemap: https://ess.netlib.re/sitemap-2012.txt.gz
+Sitemap: https://ess.netlib.re/sitemap-2013.txt.gz
+Sitemap: https://ess.netlib.re/sitemap-2014.txt.gz
+Sitemap: https://ess.netlib.re/sitemap-2015.txt.gz
+Sitemap: https://ess.netlib.re/sitemap-2016.txt.gz

@@ -1,18 +1,17 @@
 <?php
 require_once 'vendor/autoload.php';
 
+$app = new \Slim\App();
+$container = $app->getContainer();
+$container['view'] = function ($c) {
+    $view = new \Slim\Views\Smarty(__DIR__.'/templates/');
 
-$app = new \Slim\Slim(array(
-    'view' => new \Slim\Views\Smarty()
-));
-$view = $app->view();
-$view->parserExtensions = array(
-    dirname(__FILE__).'/vendor/slim/views/SmartyPlugins',
-);
-$app->get('/', array('ESSInfo\Controller\FrontController', 'index'))->name('index');
-$app->get('/search/', function () use ($app) {
-    $app->redirect($app->urlFor('index'));
-});
-$app->post('/search/', array('ESSInfo\Controller\FrontController', 'searchResults'))->name('searchResults');
-$app->get('/company/:siret', array('ESSInfo\Controller\FrontController', 'company'))->name('company');
+    $view->addSlimPlugins($c['router'], $c['request']->getUri());
+    $view->registerPlugin('modifier', 'noscheme', 'Smarty_Modifier_noscheme');
+
+    return $view;
+};
+$app->get('/', array('ESSInfo\Controller\FrontController', 'index'))->setName('index');
+$app->get('/search/', array('ESSInfo\Controller\FrontController', 'searchResults'))->setName('searchResults');
+$app->get('/company/{siret}', array('ESSInfo\Controller\FrontController', 'company'))->setName('company');
 $app->run();
