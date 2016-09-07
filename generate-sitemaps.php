@@ -1,7 +1,8 @@
 <?php
-require_once('vendor/autoload.php');
 
-$climate = new League\CLImate\CLImate;
+require_once 'vendor/autoload.php';
+
+$climate = new League\CLImate\CLImate();
 
 for ($year = 2012; $year <= 2016; $year++) {
     $climate->flank($year);
