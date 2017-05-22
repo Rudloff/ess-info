@@ -8,7 +8,6 @@ $container['view'] = function ($c) {
     $view = new \Slim\Views\Smarty(__DIR__.'/templates/');
 
     $view->addSlimPlugins($c['router'], $c['request']->getUri());
-    $view->registerPlugin('modifier', 'noscheme', 'Smarty_Modifier_noscheme');
 
     return $view;
 };

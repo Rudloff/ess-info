@@ -1,6 +1,6 @@
 {include file='templates/inc/head.tpl'}
 <body class="p1 bg--white measure" itemscope itemtype="http://schema.org/WebSite">
-    <meta itemprop="url" content="{base_url|noscheme}" />
+    <meta itemprop="url" content="{base_url}" />
     {include file='templates/inc/header.tpl'}
     <form class="py1" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="GET" action="{path_for name='searchResults'}">
         <meta itemprop="target" content="{base_url}/search/?query={literal}{query}{/literal}" />
