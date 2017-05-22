@@ -6,7 +6,7 @@ header('Content-Type: text/plain');
 
 $climate = new League\CLImate\CLImate();
 
-if (php_sapi_name() == "cli") {
+if (php_sapi_name() == 'cli') {
     for ($year = 2012; $year <= 2016; $year++) {
         $climate->flank($year);
         file_put_contents(
