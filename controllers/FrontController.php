@@ -1,4 +1,5 @@
 <?php
+
 namespace ESSInfo\Controller;
 
 use InfogreffeUnofficial\Infogreffe;
@@ -6,16 +7,15 @@ use Symfony\Component\Yaml\Yaml;
 
 class FrontController
 {
-
     public static function index($request, $response)
     {
         global $container;
         $container->view->render(
             $response,
             'index.tpl',
-            array(
-                'description'=>"Ce site vous permet de recherche un organisme et d'obtenir des informations concernant sa forme juridique."
-            )
+            [
+                'description' => "Ce site vous permet de recherche un organisme et d'obtenir des informations concernant sa forme juridique.",
+            ]
         );
     }
 
@@ -28,12 +28,12 @@ class FrontController
             $container->view->render(
                 $response,
                 'searchResults.tpl',
-                array(
-                    'results'=>$results,
-                    'query'=>$query,
-                    'title'=>'Résultats de la recherche «&nbsp;'.$query.'&nbsp;»',
-                    'description'=>'Résultats de la recherche «&nbsp;'.$query.'&nbsp;» sur ESS info'
-                )
+                [
+                    'results'     => $results,
+                    'query'       => $query,
+                    'title'       => 'Résultats de la recherche «&nbsp;'.$query.'&nbsp;»',
+                    'description' => 'Résultats de la recherche «&nbsp;'.$query.'&nbsp;» sur ESS info',
+                ]
             );
         } else {
             return self::toHome($request, $response);
@@ -83,21 +83,22 @@ class FrontController
         $container->view->render(
             $response,
             'company.tpl',
-            array(
-                'info'=>$results[0],
-                'types'=>$types,
-                'category'=>$categoryName,
-                'activity'=>$activityName,
-                'url'=>$results[0]->getURL(),
-                'title'=>$results[0]->name,
-                'description'=>$description
-            )
+            [
+                'info'        => $results[0],
+                'types'       => $types,
+                'category'    => $categoryName,
+                'activity'    => $activityName,
+                'url'         => $results[0]->getURL(),
+                'title'       => $results[0]->name,
+                'description' => $description,
+            ]
         );
     }
 
     public static function toHome($request, $response)
     {
         global $container;
+
         return $response->withHeader('Location', $container->router->pathFor('index'));
     }
 }

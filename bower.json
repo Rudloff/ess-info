@@ -1,6 +1,6 @@
 {
-    "name": "ess-info",
-    "dependencies": {
-        "furtive": "~2.2.3"
-    }
+  "name": "ess-info",
+  "dependencies": {
+    "furtive": "~2.3.0"
+  }
 }
