@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "54daa955da3d12180a63d34b082c5f0d",
+    "content-hash": "6776b940959595db48d4cf06098fc616",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1048,7 +1048,7 @@
             "version": "dev-release",
             "dist": {
                 "type": "file",
-                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-en-2016/download/?format=json&timezone=Europe/Berlin",
+                "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2016/download/?format=json&timezone=Europe/Berlin",
                 "reference": null,
                 "shasum": null
             },

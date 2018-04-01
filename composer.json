@@ -27,7 +27,7 @@
         "name": "infogreffe/entreprises-immatriculees-en-2016",
         "version": "dev-release",
         "dist": {
-          "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-en-2016/download/?format=json&timezone=Europe/Berlin",
+          "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2016/download/?format=json&timezone=Europe/Berlin",
           "type": "file"
         }
       }
