@@ -1,8 +1,8 @@
 <?php
 
+use ESSInfo\Controller\FrontController;
 use Slim\App;
 use Slim\Views\Smarty;
-use ESSInfo\Controller\FrontController;
 
 require_once 'vendor/autoload.php';
 

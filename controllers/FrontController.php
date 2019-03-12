@@ -3,9 +3,9 @@
 namespace ESSInfo\Controller;
 
 use InfogreffeUnofficial\Infogreffe;
-use Symfony\Component\Yaml\Yaml;
 use Slim\Http\Request;
 use Slim\Http\Response;
+use Symfony\Component\Yaml\Yaml;
 
 class FrontController
 {
@@ -50,6 +50,7 @@ class FrontController
         $client = new \Goutte\Client();
         if (empty($results)) {
             $response->getBody()->write('Numéro SIRET introuvable');
+
             return $response->withStatus(404);
         }
         $crawler = $client->request('GET', $results[0]->getURL());
