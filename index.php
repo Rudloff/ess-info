@@ -1,17 +1,21 @@
 <?php
 
+use Slim\App;
+use Slim\Views\Smarty;
+use ESSInfo\Controller\FrontController;
+
 require_once 'vendor/autoload.php';
 
-$app = new \Slim\App();
+$app = new App();
 $container = $app->getContainer();
 $container['view'] = function ($c) {
-    $view = new \Slim\Views\Smarty(__DIR__.'/templates/');
+    $view = new Smarty(__DIR__.'/templates/');
 
     $view->addSlimPlugins($c['router'], $c['request']->getUri());
 
     return $view;
 };
-$app->get('/', ['ESSInfo\Controller\FrontController', 'index'])->setName('index');
-$app->get('/search/', ['ESSInfo\Controller\FrontController', 'searchResults'])->setName('searchResults');
-$app->get('/company/{siret}', ['ESSInfo\Controller\FrontController', 'company'])->setName('company');
+$app->get('/', [FrontController::class, 'index'])->setName('index');
+$app->get('/search/', [FrontController::class, 'searchResults'])->setName('searchResults');
+$app->get('/company/{siret}', [FrontController::class, 'company'])->setName('company');
 $app->run();
