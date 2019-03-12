@@ -47,7 +47,8 @@ class FrontController
         $results = Infogreffe::search($params['siret']);
         $client = new \Goutte\Client();
         if (empty($results)) {
-            throw(new \Exception('Numéro SIRET introuvable'));
+            $response->getBody()->write('Numéro SIRET introuvable');
+            return $response->withStatus(404);
         }
         $crawler = $client->request('GET', $results[0]->getURL());
         $category = $crawler->filter('.first .identTitreValeur p:nth-of-type(5) .data');
