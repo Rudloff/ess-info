@@ -1,28 +1,57 @@
+---
 Association déclarée: &association
     ess: true
-    description: Une association à but non lucratif est un regroupement de personnes autour d'un projet commun.<br/>Les dirigeants d'une association ne sont pas rémunérés. Elle n'a pas de capital et donc pas d'actionnaires.
+    description: >
+        Une association à but non lucratif est un regroupement de personnes
+        autour d'un projet commun.<br/>
+        Les dirigeants d'une association ne sont pas rémunérés.
+        Elle n'a pas de capital et donc pas d'actionnaires.
 Association de droit local: *association
 Société par actions simplifiée: &SAS
     ess: false
-    description: Une société par actions simplifiée (SAS) est une société commerciale dont la forme est très libre.<br/>Le capital peut être détenu par un ou plusieurs personnes physiques ou morales. Les dirigeants ne sont pas forcément actionnaires.
+    description: >
+        Une société par actions simplifiée (SAS) est une société commerciale
+        dont la forme est très libre.<br/>
+        Le capital peut être détenu par une ou plusieurs
+        personnes physiques ou morales.
+        Les dirigeants ne sont pas forcément actionnaires.
 Profession libérale:
     ess: false
-    description: Une profession libérale est une activité professionnelle exercée par une personne physique seule.<br/> Les professions libérales peuvent s'exercer en auto-entreprise, en entreprise individuelle ou sous forme de société.
+    description: >
+        Une profession libérale est une activité professionnelle
+        exercée par une personne physique seule.<br/>
+        Les professions libérales peuvent s'exercer en auto-entreprise,
+        en entreprise individuelle ou sous forme de société.
 Société coopérative de consommation à forme anonyme:
     ess: true
-    description: Une coopérative de consommation est un regroupement de personnes afin de fournir des biens ou un service.<br/>Elle est administré par ses usagers, chacun des clients-sociétaires possèdant une voix à l'assemblée générale.
+    description: >
+        Une coopérative de consommation est un regroupement de personnes
+        afin de fournir des biens ou un service.<br/>
+        Elle est administré par ses usagers,
+        chacun des clients-sociétaires possèdant
+        une voix à l'assemblée générale.
 SA coopérative à conseil d'administration: &coop
     ess: true
-    description: Une coopérative est une entreprise dont la propriété est collective et qui est gérée démocratiquement.<br/>Chaque sociétaire possède une voix à l'assemblée générale quelque soit le nombre d'actions possédées.
+    description: >
+        Une coopérative est une entreprise dont la propriété est collective
+        et qui est gérée démocratiquement.<br/>
+        Chaque sociétaire possède une voix à l'assemblée générale
+        quelque soit le nombre d'actions possédées.
 Société coopérative à forme anonyme à capital variable: *coop
 Société coopérative de banque populaire: &banqueCoop
     ess: true
-    description: Une banque coopérative (ou banque mutualiste) est une banque dont les usagers sont également sociétaires.<br/>Chaque sociétaire possède une seule voix à l'assemblée générale, quelque soit le nombre d'actions qu'il possède.
+    description: >
+        Une banque coopérative (ou banque mutualiste) est une banque
+        dont les usagers sont également sociétaires.<br/>
+        Chaque sociétaire possède une seule voix à l'assemblée générale,
+        quelque soit le nombre d'actions qu'il possède.
 Société coopérative de banque populaire à forme anonyme: *banqueCoop
 Société coopérative de banque à forme anonyme et capital variable: *banqueCoop
 Mutuelle:
     ess: true
-    description: Une mutuelle est un organisme à but non-lucratif qui assure la protection sociale de ses membres.
+    description: >
+        Une mutuelle est un organisme à but non-lucratif
+        qui assure la protection sociale de ses membres.
 Fondation:
     ess: true
 Société à responsabilité limitée:
@@ -37,12 +66,20 @@ Société d'exercice libéral à responsabilité limitée:
     ess: false
 Etablissement public national à caractère scientifique culturel et professionnel: &ep
     public: true
-    description: Un établissement public est un organisme financé par ds fonds publics qui remplit une mission d'intérêt général.<br/>Ils sont rattachés à une administration de l'État ou une collectivité.
+    description: >
+        Un établissement public est un organisme financé par des fonds publics
+        qui remplit une mission d'intérêt général.<br/>
+        Ils sont rattachés à une administration de l'État ou une collectivité.
 Etablissement d'hospitalisation:
     public: true
 Société anonyme:
     ess: false
-    description: Une société anonyme (SA) est une société dont le nom des actionnaires n'est pas connue.<br/>Les actionnaires peuvent librement revendre leurs parts à d'autres personnes. Ils ont autant de voix à l'assemblée générale que d'actions possédées.
+    description: >
+        Une société anonyme (SA) est une société
+        dont le nom des actionnaires n'est pas connu.<br/>
+        Les actionnaires peuvent librement revendre
+        leurs parts à d'autres personnes.
+        Ils ont autant de voix à l'assemblée générale que d'actions possédées.
 Etablissement public local à caractère industriel ou commercial: *ep
 Société anonyme d'économie mixte à conseil d'administration:
     public: true
@@ -77,5 +114,9 @@ Artisan:
     ess: false
 Syndicat de salariés:
     ess: true
-    description: Un syndicat professionnel est une organisation qui a pour but de défendre les intérêts des salariés d'une entreprise ou d'un secteur.<br/>Il s'agit d'une forme particulière d'association.
+    description: >
+        Un syndicat professionnel est une organisation
+        qui a pour but de défendre les intérêts des salariés
+        d'une entreprise ou d'un secteur.<br/>
+        Il s'agit d'une forme particulière d'association.
 Union d'économie sociale - Société coopérative à responsabilité limitée: *coop

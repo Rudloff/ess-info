@@ -1,7 +1,7 @@
 {
   "name": "rudloff/ess-info",
   "description": "Web app that gives information about French companies",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-only",
   "require": {
     "fabpot/goutte": "~3.1.0",
     "rudloff/infogreffe-unofficial-api": "dev-develop",
@@ -27,7 +27,7 @@
         "name": "infogreffe/entreprises-immatriculees-en-2016",
         "version": "dev-release",
         "dist": {
-          "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-en-2016/download/?format=json&timezone=Europe/Berlin",
+          "url": "https://www.datainfogreffe.fr/explore/dataset/entreprises-immatriculees-2016/download/?format=json&timezone=Europe/Berlin",
           "type": "file"
         }
       }

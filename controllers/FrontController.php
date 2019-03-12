@@ -3,11 +3,13 @@
 namespace ESSInfo\Controller;
 
 use InfogreffeUnofficial\Infogreffe;
+use Slim\Http\Request;
+use Slim\Http\Response;
 use Symfony\Component\Yaml\Yaml;
 
 class FrontController
 {
-    public static function index($request, $response)
+    public static function index(Request $request, Response $response)
     {
         global $container;
         $container->view->render(
@@ -19,7 +21,7 @@ class FrontController
         );
     }
 
-    public static function searchResults($request, $response)
+    public static function searchResults(Request $request, Response $response)
     {
         global $container;
         $query = $request->getParam('query');
@@ -40,14 +42,16 @@ class FrontController
         }
     }
 
-    public static function company($request, $response, $params)
+    public static function company(Request $request, Response $response, array $params)
     {
         global $container;
         $types = Yaml::parse(file_get_contents(__DIR__.'/../types.yml'));
         $results = Infogreffe::search($params['siret']);
         $client = new \Goutte\Client();
         if (empty($results)) {
-            throw(new \Exception('Numéro SIRET introuvable'));
+            $response->getBody()->write('Numéro SIRET introuvable');
+
+            return $response->withStatus(404);
         }
         $crawler = $client->request('GET', $results[0]->getURL());
         $category = $crawler->filter('.first .identTitreValeur p:nth-of-type(5) .data');
@@ -95,7 +99,7 @@ class FrontController
         );
     }
 
-    public static function toHome($request, $response)
+    public static function toHome(Request $request, Response $response)
     {
         global $container;
 
