@@ -1,7 +1,7 @@
 {
   "name": "rudloff/ess-info",
   "description": "Web app that gives information about French companies",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-only",
   "require": {
     "fabpot/goutte": "~3.1.0",
     "rudloff/infogreffe-unofficial-api": "dev-develop",
